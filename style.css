@@ -18,6 +18,16 @@ color-grey-dark-2: #6D5D4B
 
 */
 
+/*
+
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+*/
+
 /* Universal */
 
 * {
@@ -166,7 +176,40 @@ body {
 /* Lecturers */
 
 .lecturers {
-    height: 50rem;
+    height: 100rem;
+    width: 100%;
+    text-align: center;
+}
+
+.lecturers__row {
+    height: 100%;
+    width: 100%;
+}
+
+.lecturers__header {
+    width: 100%;
+    font-size: 5.2rem;
+    margin-top: 8rem;
+    padding: 2rem 0;
+}
+
+.lecturers__box-slider {
+    position: relative;
+    height: 85%;
+    width: 100%;
+    padding: 50px 80px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.lecturers__box {
+    height: 100%;
+    width: calc(100% - 5);
+    overflow: hidden;
+}
+
+.lecturers__box-slider img {
+    height: 100%;
 }
 
 /* Footer */
