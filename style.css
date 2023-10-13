@@ -216,7 +216,7 @@ body {
     padding: 1rem 1.5rem;
 }
 
-.about__find-out-more-btn .icon {
+.about__find-out-more-btn > .icon {
     margin-left: 1rem;
 }
 
@@ -340,29 +340,31 @@ body {
 
 .lecturers__find-out-more-btn:link,
 .lecturers__find-out-more-btn:visited {
+    display: inline-block;
+    position: relative;
     font-size: 1.6rem;
     text-decoration: none;
-    color: #fa991c;
-    background-color: #101d2c;
+    color: #101d2c;
+    background-color: #fa991c;
     border-radius: 1rem;
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
 
     /* Transition */
     transition: 0.3s ease;
 }
 
+.lecturers__find-out-more-btn > .icon {
+    margin-left: 1rem;
+}
+
 .lecturers__find-out-more-btn:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgb(16, 29, 44, 0.2);
+    box-shadow: 0 1rem 2rem rgb(16, 29, 44, 0.1);
 }
 
 .lecturers__find-out-more-btn:active {
     transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgb(16, 29, 44, 0.4);
-}
-
-.lecturers__find-out-more-btn .icon {
-    margin-left: 1rem;
+    box-shadow: 0 0.5rem 1rem rgb(16, 29, 44, 0.3);
 }
 
 /* */
@@ -404,7 +406,11 @@ body {
 }
 
 .card__side--back-1 {
-    background-image: linear-gradient(to right bottom, #000, #000);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(250, 153, 28, 1),
+        rgba(255, 203, 0, 1)
+    );
 }
 
 .card:hover .card__side--front {
@@ -529,7 +535,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    height: 20rem;
+    height: 25rem;
     background-color: #101d2c;
     color: #fff;
 }
