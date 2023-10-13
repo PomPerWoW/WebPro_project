@@ -71,6 +71,7 @@ body {
 .stack-left {
     display: flex;
     align-items: center;
+    justify-self: center;
 }
 
 .se-logo {
@@ -91,21 +92,38 @@ body {
 }
 
 .navigation__menu-list {
+    width: 80rem;
     display: flex;
+    align-items: center;
     list-style: none;
+    justify-content: space-between;
 }
 
-.navigation__menu-item:not(:last-child) {
-    margin-right: 10rem;
+.navigation__menu-item {
+    margin: 0;
+    padding: 0;
 }
 
 .navigation__menu-item a {
     font-size: 1.6rem;
     color: #fff;
     text-decoration: none;
+}
 
-    /* Transition */
-    transition: 0.6s ease;
+.stack-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation__menu-item--special {
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 8rem;
+    background-color: #fa991c;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
 }
 
 /* Hero */
@@ -151,7 +169,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #101d2c;
-    height: 100vh;
+    height: 100rem;
+    padding-bottom: 35rem;
 }
 
 .about__text {
