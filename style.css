@@ -396,7 +396,7 @@ body {
 .card__side--front {
     border-radius: 2rem;
     box-shadow: 0 0 4rem 1rem rgb(0, 0, 0, 0.1);
-    background-color: #a6a6a6;
+    background-color: #fff;
 }
 
 .card__side--back {
@@ -434,10 +434,10 @@ body {
 .card__picture--1 {
     background-image: linear-gradient(
             to right bottom,
-            rgb(255, 255, 255, 0.2),
-            rgb(255, 255, 255, 0.2)
+            rgba(255, 179, 0, 0.4),
+            rgba(255, 0, 0, 0.4)
         ),
-        url(../img/nat-5.jpg);
+        url(img/images/test);
 }
 
 .card__heading {
@@ -447,9 +447,10 @@ body {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 12rem;
+    top: 10rem;
     right: 2rem;
-    width: 75%;
+    width: 100%;
+    line-height: 5.2rem;
 }
 
 .card__heading-span {
@@ -460,10 +461,11 @@ body {
 
 .card__heading-span--1 {
     background-image: linear-gradient(
-        to right bottom,
-        rgba(rgb(255, 255, 255, 0.2), 0.85),
-        rgba(rgb(255, 255, 255, 0.2), 0.85)
-    );
+            to right bottom,
+            rgba(255, 179, 0, 0.4),
+            rgba(255, 0, 0, 0.4)
+        ),
+        url(img/images/test);
 }
 
 .card__details {
@@ -482,8 +484,8 @@ body {
     padding: 1rem;
 }
 
-.card:not(:last-child) {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+.card__details li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .card__cta {
