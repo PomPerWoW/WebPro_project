@@ -163,6 +163,12 @@ body {
     margin-left: 1rem;
 }
 
+/* Lecturers */
+
+.lecturers {
+    height: 50rem;
+}
+
 /* Footer */
 
 .footer {
