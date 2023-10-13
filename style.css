@@ -50,6 +50,7 @@ body {
 /* Header and Navigation */
 
 .navigation {
+    z-index: 1;
     background-color: #101d2c;
     position: fixed;
     width: 100%;
@@ -176,7 +177,8 @@ body {
 /* Lecturers */
 
 .lecturers {
-    height: 100rem;
+    padding: 5rem;
+    height: 80rem;
     width: 100%;
     text-align: center;
 }
@@ -184,32 +186,55 @@ body {
 .lecturers__row {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lecturers__header {
     width: 100%;
     font-size: 5.2rem;
-    margin-top: 8rem;
-    padding: 2rem 0;
 }
 
 .lecturers__box-slider {
     position: relative;
     height: 85%;
     width: 100%;
-    padding: 50px 80px;
+    padding: 0 10rem;
     display: flex;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 .lecturers__box {
-    height: 100%;
-    width: calc(100% - 5);
+    width: 15%;
+    height: 60%;
     overflow: hidden;
+}
+
+.lecturers__box--active {
+    height: 80%;
 }
 
 .lecturers__box-slider img {
     height: 100%;
+}
+
+.img:hover {
+    transform: scale(2rem);
+}
+
+.lecturers__box img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
 }
 
 /* Footer */
