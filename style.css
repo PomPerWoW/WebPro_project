@@ -300,6 +300,35 @@ body {
     bottom: 0;
 }
 
+.lecturers__find-out-more-btn:link,
+.lecturers__find-out-more-btn:visited {
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #101d2c;
+    background-color: #fa991c;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+    /* Transition */
+    transition: 0.3s ease;
+}
+
+.lecturers__find-out-more-btn > .icon {
+    margin-left: 1rem;
+}
+
+.lecturers__find-out-more-btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgb(16, 29, 44, 0.1);
+}
+
+.lecturers__find-out-more-btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgb(16, 29, 44, 0.3);
+}
+
 /* About - Lecturers section divider */
 
 .about {
@@ -338,8 +367,9 @@ body {
     margin-bottom: 5rem;
 }
 
-.lecturers__find-out-more-btn:link,
-.lecturers__find-out-more-btn:visited {
+.program__find-out-more-btn:link,
+.program__find-out-more-btn:visited {
+    margin-top: 10rem;
     display: inline-block;
     position: relative;
     font-size: 1.6rem;
@@ -353,16 +383,16 @@ body {
     transition: 0.3s ease;
 }
 
-.lecturers__find-out-more-btn > .icon {
+.program__find-out-more-btn > .icon {
     margin-left: 1rem;
 }
 
-.lecturers__find-out-more-btn:hover {
+.program__find-out-more-btn:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgb(16, 29, 44, 0.1);
 }
 
-.lecturers__find-out-more-btn:active {
+.program__find-out-more-btn:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgb(16, 29, 44, 0.3);
 }
@@ -525,6 +555,30 @@ body {
     height: 15rem;
     background-color: #101d2c;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8rem));
+}
+
+/* Admissions */
+
+.admissions {
+    text-align: center;
+    padding: 0 45rem;
+    height: 100vh;
+}
+
+.admissions__header {
+    width: 100%;
+    font-size: 5.2rem;
+}
+
+.admissions__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.admissions__row {
+    box-shadow: 0 0 4rem 1rem rgb(0, 0, 0, 0.1);
+    width: 100%;
+    height: 10rem;
 }
 
 /* */
