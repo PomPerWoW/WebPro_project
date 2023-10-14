@@ -397,7 +397,6 @@ body {
     box-shadow: 0 0.5rem 1rem rgb(16, 29, 44, 0.3);
 }
 
-/* */
 .col-1-of-3 {
     width: 40rem;
 }
@@ -561,27 +560,28 @@ body {
 
 .admissions {
     text-align: center;
-    padding: 0 45rem;
-    height: 100vh;
+    padding: 10rem 45rem;
 }
 
 .admissions__header {
     width: 100%;
     font-size: 5.2rem;
+    margin-bottom: 5rem;
 }
 
 .admissions__container {
+    height: 50rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .admissions__row {
     box-shadow: 0 0 4rem 1rem rgb(0, 0, 0, 0.1);
     width: 100%;
-    height: 10rem;
+    height: 15rem;
 }
-
-/* */
 
 /* Footer */
 
